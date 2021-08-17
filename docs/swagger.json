@@ -1,0 +1,32 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "This is a sample server Greeting server.",
+        "title": "Swagger Example API",
+        "termsOfService": "http://swagger.io/terms/",
+        "contact": {},
+        "version": "1.0"
+    },
+    "host": "greeting.swagger.io",
+    "basePath": "/v2",
+    "paths": {
+        "/greeting": {
+            "get": {
+                "description": "get \"hello world\"",
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "get greeting",
+                "operationId": "greeting",
+                "responses": {
+                    "200": {
+                        "description": "ok",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

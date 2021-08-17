@@ -1,0 +1,22 @@
+basePath: /v2
+host: greeting.swagger.io
+info:
+  contact: {}
+  description: This is a sample server Greeting server.
+  termsOfService: http://swagger.io/terms/
+  title: Swagger Example API
+  version: "1.0"
+paths:
+  /greeting:
+    get:
+      description: get "hello world"
+      operationId: greeting
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: ok
+          schema:
+            type: string
+      summary: get greeting
+swagger: "2.0"
