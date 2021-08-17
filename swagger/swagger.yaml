@@ -1,0 +1,23 @@
+swagger: '2.0'
+info:
+  version: 1.0.0
+  title: "Greeting Server"
+  description: this server greets to target user.
+paths:
+  /hello:
+    get:
+      produces:
+        - text/plain
+      parameters:
+        - name: name
+          required: false
+          type: string
+          in: query
+          description: default value is "sample" if not given
+      operationId: getGreeting
+      responses:
+        200:
+          description: returns a greeting
+          schema:
+              type: string
+              description: contains the actual greeting as plain text
